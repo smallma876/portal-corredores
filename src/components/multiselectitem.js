@@ -2,8 +2,17 @@ import React, { Component } from 'react';
 
 class MultiSelectItem extends Component {
     render() {
+        const style = {
+            padding: "5px 10px"
+        }
+
         return (
-            <li value="02" class="active" rel="1">N° Póliza / Contrato</li>
+            <li value={this.props.item.id} style={style}>
+                <div className="li-item">
+                    <input type="checkbox" className="mr-5px"/>
+                    <span>{this.props.item.nombre}</span>
+                </div>
+            </li>
         );
     }
 }

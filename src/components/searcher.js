@@ -30,7 +30,7 @@ function Searcher(){
                 <Container>
                     <Row>
                         <Col>
-                            <MultiSelectPga/>
+                            <MultiSelectPga onClick={this.props.handlerSelectRamo}/>
                         </Col>
                         <Col>
                            <MultiSelectPga/>

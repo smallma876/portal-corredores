@@ -1,1 +1,40 @@
+.contractor-modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 47px;
+  z-index: 200;
+  width: 150px;
+}
 
+.contractor-modal-content{
+  background-color: #FFF;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 2px #ccc;
+}
+
+.contractor-options{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-options li{
+  border-top: 1px solid #DDD;
+  padding-left: 15px;
+  padding: 7px 0 7px 15px;
+  font-size: 14px;
+  text-align: left;
+  color: #6a6a6a;
+}
+
+.li-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mr-5px{
+     margin-right: 5px;
+}

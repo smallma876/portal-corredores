@@ -1,0 +1,49 @@
+[{
+    "nombre": "Asistencia médica",
+    "id": "01"
+},
+{
+    "nombre": "EPS Individual",
+    "id": "02"
+},
+{
+    "nombre": "EPS Regular",
+    "id": "03"
+},
+{
+    "nombre": "Autos",
+    "id": "04"
+},
+{
+    "nombre": "SOAT",
+    "id": "05"
+},
+{
+    "nombre": "Vida Grupo",
+    "id": "06"
+},
+{
+    "nombre": "SCTR Pensión",
+    "id": "07"
+},
+{
+    "nombre": "SCTR Salud",
+    "id": "08"
+},
+{
+    "nombre": "Vida Ley",
+    "id": "09"
+},
+{
+    "nombre": "Riesgos generales",
+    "id": "10"
+},
+{
+    "nombre": "Líneas personales",
+    "id": "11"
+},
+{
+    "nombre": "Vida individual",
+    "id": "12"
+}
+]

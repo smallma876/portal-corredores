@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import JsonRamos from './../data/jsonramo.json'
 import MultiSelectItem from './multiselectitem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class MultiSelectPga extends Component {
-
    
     render() {
 
@@ -22,24 +21,23 @@ class MultiSelectPga extends Component {
                alignContent: "center",
                background: "#FFF",
                borderRadius: "2px",
-               cursor: "pointer"
+               cursor: "pointer",
+               width: "184px",
+               position: "relative"
         }
-    
-        const items = this.props.items?this.props.items:[];
 
         return (
             <React.Fragment>
                 <div style={wrapperMultiSelect}>
                     <div style={multiSelectStyle}>
                         <span className="select-contractor" rel="7">
-                            <strong>Seleccionar <i className="fa fa-angle-down" aria-hidden="true"></i>
-                            <FontAwesomeIcon icon="accusoft" size="lg"/>
+                            <strong>Seleccionar 
                             </strong>
                         </span>
                         <div className="contractor-modal">
                             <div className="contractor-modal-content">
                                 <ul className="contractor-options poliza">
-                                    {items.map( item => item)}
+                                    {JsonRamos.map( ramo => <MultiSelectItem item ={ramo} key={ramo.id}/>)}
                                 </ul>
                             </div>
                         </div>
