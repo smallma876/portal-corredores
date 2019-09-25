@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import MultiSelectPga from './multiselect';
+import JsonRamos from './../data/jsonramo.json';
+import JsonEstado from './../data/jsonestado.json';
+import JsonSituacion from './../data/jsonsituacion.json';
 
 function Searcher(){
 
@@ -30,13 +33,13 @@ function Searcher(){
                 <Container>
                     <Row>
                         <Col>
-                            <MultiSelectPga onClick={this.props.handlerSelectRamo}/>
+                            <MultiSelectPga subtitle ={"Ramos"} arrayData = {JsonRamos}/>
                         </Col>
                         <Col>
-                           <MultiSelectPga/>
+                           <MultiSelectPga subtitle ={"Estado"} arrayData = {JsonEstado}/>
                         </Col>   
                         <Col>
-                            <MultiSelectPga/>
+                            <MultiSelectPga subtitle ={"Situación"} arrayData = {JsonSituacion}/>
                         </Col>
                     </Row>
                     <Row>
@@ -44,12 +47,14 @@ function Searcher(){
                             <div style={styleGeneral}>
                                 <div>
                                     <select style={inputStyle}>
-                                        <option>Nro Poliza</option>
-                                        <option>Nro Poliza</option>
-                                        <option>Nro Poliza</option>
-                                        <option>Nro Poliza</option>
-                                        <option>Nro Poliza</option>
-                                        <option>Nro Poliza</option>
+                                        <option value="02">Nro Poliza/ Contrato</option>
+                                        <option value="13">Código Agrupador</option>
+                                        <option value="03">DNI</option>
+                                        <option value="04">RUC</option>
+                                        <option value="05">CE</option>
+                                        <option value="01">Contratante</option>
+                                        <option value="06">Asegurado</option>
+                                        <option value="07">Placa</option>
                                     </select>
                                 </div>
                             </div>

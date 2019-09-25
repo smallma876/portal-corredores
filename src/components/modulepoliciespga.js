@@ -5,23 +5,12 @@ import TablePolicies from './tablepolicies';
 
 class ModulePoliciesPga extends Component {
 
-    constructor(props){
-        super(props);
-        this.handlerSelectRamo = this.handlerSelectRamo.bind(this);
-        this.state = {
-            ramoSelected : false
-        }
-    }
-
-    handlerSelectRamo(){
-
-    }
 
     render() {
         return (
             <HomeLayout>
                 <Searcher/>
-                <TablePolicies  handlerSelectRamo={this.handlerSelectRamo}/>         
+                <TablePolicies/>         
             </HomeLayout>
         );
     }
