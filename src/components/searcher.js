@@ -8,7 +8,7 @@ import JsonRamos from './../data/jsonramo.json';
 import JsonEstado from './../data/jsonestado.json';
 import JsonSituacion from './../data/jsonsituacion.json';
 
-function Searcher(){
+function Searcher(props){
 
     const styleGeneral = {
               
@@ -71,7 +71,7 @@ function Searcher(){
                         <Col>
                             <div style={styleGeneral}>
                                 <div>
-                                    <button type="submit" className="btn btn-primary">Buscar</button>
+                                    <button type="submit" className="btn btn-primary" onClick={props.callServicePolicies}>Buscar</button>
                                 </div>     
                             </div>       
                         </Col>
