@@ -1,29 +1,30 @@
-[{
-    "nombre": "Todas",
-    "id": "todas"
-},
-{
-    "nombre": "Por anular",
-    "id": "01"
-},
-{
-    "nombre": "Por renovar",
-    "id": "02"
-},
-{
-    "nombre": "Anuladas",
-    "id": "03"
-},
-{
-    "nombre": "No renovadas",
-    "id": "04"
-},
-{
-    "nombre": "Renovadas/Programadas",
-    "id": "05"
-},
-{
-    "nombre": "Vigencia anterior",
-    "id": "06"
-}
-]
+[
+    {
+       "nombre":"Todas",
+       "id":"todas"
+    },
+    {
+       "nombre":"Por anular",
+       "id":"01"
+    },
+    {
+       "nombre":"Por renovar",
+       "id":"02"
+    },
+    {
+       "nombre":"Anuladas",
+       "id":"03"
+    },
+    {
+       "nombre":"No renovadas",
+       "id":"04"
+    },
+    {
+       "nombre":"Renovadas/Programadas",
+       "id":"05"
+    },
+    {
+       "nombre":"Vigencia anterior",
+       "id":"06"
+    }
+ ]

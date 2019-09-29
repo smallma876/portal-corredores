@@ -1,6 +1,33 @@
 import React, { Component } from 'react';
 import MultiSelectItem from './multiselectitem';
 
+    const wrapperMultiSelect = {
+        display : "flex",
+        justifyContent : "center",
+        fontSize : "12px",
+    }
+
+    const multiSelectStyle = {
+        padding : "12px 15px",
+        border: "1px solid #ddd",
+        display: "flex",
+        justifyContent : "center",
+        alignContent: "center",
+        background: "#FFF",
+        borderRadius: "2px",
+        cursor: "pointer",
+        width: "184px",
+        position: "relative"
+    }
+
+    const displayNone={
+        display: "none"
+    }
+
+    const displayUnset={
+        display: "unset"
+    }
+
 class MultiSelectPga extends Component {
 
     constructor(props){
@@ -16,38 +43,9 @@ class MultiSelectPga extends Component {
             isToggleOn : !state.isToggleOn
         }))
     }
-   
+    
     render() {
-
-        const wrapperMultiSelect = {
-                display : "flex",
-                justifyContent : "center",
-                fontSize : "12px",
-
-        }
-
-        const multiSelectStyle = {
-               padding : "12px 15px",
-               border: "1px solid #ddd",
-               display: "flex",
-               justifyContent : "center",
-               alignContent: "center",
-               background: "#FFF",
-               borderRadius: "2px",
-               cursor: "pointer",
-               width: "184px",
-               position: "relative"
-        }
-
-        const displayNone={
-              display: "none"
-        }
-
-        const displayUnset={
-            display: "unset"
-        }
-
-
+     
         return (
             <React.Fragment>
                 <div style={wrapperMultiSelect}>
@@ -59,7 +57,9 @@ class MultiSelectPga extends Component {
                         <div className="contractor-modal" style={this.state.isToggleOn ? displayUnset:displayNone}>
                             <div className="contractor-modal-content">
                                 <ul className="contractor-options poliza">
-                                    {this.props.arrayData.map( ramo => <MultiSelectItem item ={ramo} key={ramo.id}/>)}
+                                    {this.props.arrayData.map( ramo => <MultiSelectItem item ={ramo} key={ramo.id} 
+                                                handlerChangeCheckbox = {this.props.handlerChangeCheckbox} name={this.props.name}/>)
+                                                }
                                 </ul>
                             </div>
                         </div>
